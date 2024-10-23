@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Forum</title>
+    <script src="https://kit.fontawesome.com/38353e6842.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header  -->
+    <header>
+        <div class="header-upper">
+            <h3>ReTro</h3>
+
+            <nav>
+                <p><i class="fa-solid fa-house"></i></p>
+                <p><i class="fa-solid fa-pen"></i></p>
+                <p><i class="fa-solid fa-user"></i></p>
+                <p><i class="fa-regular fa-flag"></i></p>
+
+                <button>Sign In</button>
+            </nav>
+        </div>
+
+        <div class="banner">
+            <div class="banner-left">
+                <h2>Welcome to the <span>Retro</span> Forum</h2>
+                <p>Share your favorite opinion and win and wp forum coffee mug!</p>
+
+                <div>
+                    <input id="search-box" type="text" placeholder="Search here anything">
+                    <button onclick="filterPosts()" id="search-btn">Search</button>
+                </div>
+            </div>
+
+            <div class="banner-right">
+                <div>
+                    <p>Registered Users</p>
+                    <p>Forum</p>
+                    <p>Topics</p>
+                    <p>Replies</p>
+                </div>
+
+                <div>
+                    <p>01</p>
+                    <p>05</p>
+                    <p>01</p>
+                    <p>01</p>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- main  -->
+    <main>
+        <div class="main-heading">
+            <h2>Let's Discuss</h2>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+
+        <!-- posts & mark read -->
+
+        <div class="pnm">
+            <div id="post-container" class="post-container">
+                
+            </div>
+
+            <div>
+                <div id="marked-read-container" class="marked-read-container">
+                    <div class="marked-red-top">
+                        <h4>Title</h4>
+                        <p><i class="fa-solid fa-check"></i> Marked read (<span id="marked-read-count-view">0</span>)</p>
+                    </div>
+    
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- latest post  -->
+
+        <div class="main-heading">
+            <h2>Let's Discuss</h2>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div> 
+
+        <div id="latest-post-container" class="latest-post-container">
+
+            <!-- <div class="latest-post">
+                <img src="${post.cover_image ? post.cover_image : 'images/noimg.png'}"
+                <p>${post.author.posted_date}</p>
+                <p class="title">${post.title}</p>
+                <p>${post.description}</p>
+
+                <div class="namendes">
+                    <img src="${post.profile_image ? post.profile_image : 'images/noimg.png'}" alt="">
+                    <div>
+                        <p class="name">${post.author.name ? post.author.name : 'Unnamed'}</p>
+                        <p>${post.author.designation ? post.author.designation : 'Unknown'}</p>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="main-heading">
+            <h2>Let's Discuss</h2>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div> 
+
+        <div class="footer-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <hr>
+        <p>2017, All Rights Reserved</p>
+        
+    </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>

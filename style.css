@@ -1,0 +1,386 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin:  auto;
+}
+
+/* header  */
+header{
+    max-width: 1170px;
+    margin:20px auto;
+}
+
+.header-upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-upper > h3{
+        font-weight: 900;
+        font-size: 36px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+nav > p {
+    border-radius: 50%;
+    background-color: #cdd0d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+}
+
+nav > button {
+    width: 144px;
+    height: 56px;
+    background-color: #797DFC;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 32px;
+    cursor: pointer;
+
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: url('images/bgbanner.png');
+    background-color: #12132D;
+    border-radius: 30px;
+    margin-top: 30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.banner-left{
+    max-width: 500px;
+}
+
+.banner-left > h2{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+
+}
+
+.banner-left > h2 > span{
+    color: violet;
+}
+
+.banner-left > p {
+    color: white;
+    font-size: 23px;
+}
+
+.banner-left > div {
+    width: 400px;
+    height: 56px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+
+}
+.banner-left input{
+    width: 260px;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.banner-left input:focus{
+    border: 0px;
+    outline: 0px;
+}
+
+.banner-left button{
+    border: 0px;
+    background-color:#797DFC ;
+    height: 40px;
+    width: 85px;
+    border-radius: 19px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner-right{
+    background-color: white;
+    width: 331px;
+    border-radius: 40px;
+    padding: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* main */
+
+.main-heading{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-heading > h2 {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.main-heading > p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto  ;
+}
+
+/* posts & mark read  */
+
+.pnm {
+    max-width: 1170px;
+    margin: 25px auto;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.posts-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.post {
+    display: flex;
+    justify-content: left;
+    gap: 45px;
+    padding: 30px;
+    background-color:aliceblue;
+    border-radius: 25px;
+    height: 270px;
+    width: 772px;
+    position: relative;
+    margin-top: 20px;
+    
+    
+}
+
+.post-pic{
+    width: 72px;
+    height: 72px;
+    border-radius: 17px;
+    margin-top: 20px;
+}
+
+.post > div {
+    width: 100%;
+}
+.post > div > div {
+    display: flex;
+    gap: 20px;
+}
+
+.post > div > div > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.post > div > h4 {
+    font-size: 23px;
+    line-height: 0;
+}
+
+.post > div > p {
+    font-size: 19px;
+    
+}
+
+.post > div > hr {
+    position: absolute;
+    /* height: 330px; */
+    width: 640px;
+    top: 230px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    top: 250px;
+}
+
+.icons > div {
+    display: flex;
+    gap: 20px;
+}
+.icons > i {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 600px;
+    cursor: pointer;
+}
+
+.marked-read-container{
+    width: 270px;
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.marked-red-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marked-red-top > h4 {
+    font-size: 21px;
+    line-height: 0;
+}
+
+.marked-read-post{
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 22px;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.marked-read-post > p {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* latest post  */
+
+.latest-post-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 60px auto;
+}
+
+.latest-post-container > div {
+    width: 334px;
+    padding: 20px 20px 140px 20px;
+    border: 1px solid #cdd0d1;
+    border-radius: 25px;
+    
+}
+
+.latest-post-container > div > img {
+    width: 335px;
+    height: 190px;
+    border-radius: 30px;
+    
+}
+
+.latest-post-container > div > p {
+    font-size: 20px;
+   
+    
+}
+
+.latest-post-container > div .title {
+    font-size: 21px;
+    font-weight: 700;
+
+}
+
+.latest-post-container > div > div {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+    line-height: 0;
+}
+
+.latest-post-container > div > div >img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.latest-post-container> div > div > div > .name {
+    
+    font-size: 20px;
+}
+
+.latest-post-container > div > div > div > p {
+    
+    font-size: 16px;
+}
+
+.latest-post{
+    position: relative;
+    
+}
+
+.namendes{
+    position: absolute;
+    bottom: 20px;
+}
+
+/* footer  */
+
+footer{
+    
+    background-color: aliceblue;
+    padding: 70px 140px;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    margin: 60px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer > div > i{
+    font-size: 35px;
+}
+
+footer > p {
+    text-align: center;
+    margin-top: 40px;
+}
+
